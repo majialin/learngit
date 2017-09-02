@@ -1,3 +1,7 @@
+ref: http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+     https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+     https://git-scm.com/docs
+     
 git init 初始化仓库，即在当前目录下创建.git目录
 git remote add origin <remote-rep> 添加远程仓库关联，命名为origin
 git push -u origin master 将本地master分支推送到origin主机上的对应分支 -u使push成功后为分支添加对应关联
