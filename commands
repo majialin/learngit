@@ -1,0 +1,21 @@
+git init 初始化仓库，即在当前目录下创建.git目录
+git remote add origin <remote-rep> 添加远程仓库关联，命名为origin
+git push -u origin master 将本地master分支推送到origin主机上的对应分支 -u使push成功后为分支添加对应关联
+git checkout -b <branch-name> 创建并切换分支
+git checkout <branch-name> 切换分支
+git branch <branch-name> 创建分支
+git merge <branch-name> 合并到当前分支
+git merge --no-ff -m "merge with no-ff" <branch-name> 非快速模式合并
+git log --graph --pretty=oneline --abbrev-commit 查看分支合并历史
+git stash 保存当前工作
+git stash list 查看保存的工作
+git stash pop 恢复工作并删除保存记录
+git stash apply 恢复工作
+git branch --set-upstream <branch-name> origin/<branch-name> 设置分支关联
+git branch -vv 查看分支关联关系
+git pull origin <remote-branch> 取回远程分支并与当前分支合并
+git pull origin <remote-branch>:<local-branch> 取回远程分支与本地分支合并
+git tag <tag-name> 打标签
+git tag 查看所有标签
+git tag -a v1.0 -m "version 1.0 released" 打上标签说明，-a指定标签名，-m后为说明文字
+git show <tag-name> 查看该标签
